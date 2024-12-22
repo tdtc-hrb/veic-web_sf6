@@ -1,0 +1,7 @@
+controllers:
+    resource: '../../src/Controller/'
+    type: attribute
+    prefix:
+        ja: '/ja-jp'
+        en: '/en-us'
+        zh: '/zh-cn'
