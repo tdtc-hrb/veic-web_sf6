@@ -69,8 +69,10 @@ at .gitignore:
 ```
 
 
-## Enabled Sass
-- webpack.config.js
+## Sass
+> webpack.config.js
+
+- enables Sass/SCSS support
 ```
 // enables Sass/SCSS support
 .enableSassLoader()
@@ -79,14 +81,25 @@ at .gitignore:
 ### User config
 - app.scss
 add app.scss file of assets/styles
-```
-@import "~bootstrap/scss/bootstrap";
-```
 - app.js
 import it at app.js:
 ```
 import './styles/app.scss';
 ```
+
+#### app.scss
+Use
+```
+@use "~bootstrap/scss/bootstrap";
+```
+instead of
+```
+@import "~bootstrap/scss/bootstrap";
+```
+
+also see: [@import rules](https://sass-lang.com/documentation/breaking-changes/import/), 
+[@use](https://sass-lang.com/documentation/at-rules/use/), 
+and [Mixed declarations](https://github.com/twbs/bootstrap/issues/40621)
 
 
 ## [usage jquery](https://symfony.com/doc/current/frontend/encore/legacy-applications.html#accessing-jquery-from-outside-of-webpack-javascript-files)
