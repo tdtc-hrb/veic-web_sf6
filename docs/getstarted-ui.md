@@ -27,11 +27,6 @@ yarn add sass-loader
 ```
 yarn add jquery --dev
 ```
-- Bootstrap
-```
-yarn add @popperjs/core --dev
-yarn add bootstrap --dev
-```
 
 ### update
 - babel
@@ -52,6 +47,16 @@ yarn add webpack-notifier --dev
 ```
 yarn add @symfony/webpack-encore --dev
 ```
+
+### Bootstrap
+```
+yarn add @popperjs/core --dev
+yarn add bootstrap --dev
+```
+#### v6 breaking changes
+- Add new colors Sass partial, generate new CSS variables for tints and
+[scss/_colors.scss](https://github.com/twbs/bootstrap/commit/7925387d5eda17500a837a068afb98c5cc3c7191#diff-6ec80b85fef778406fe6f5360b0c0e7fe08cecae0641ef8da62809af4f2392a9)
+- [Remove jQuery support in plugins](https://github.com/twbs/bootstrap/commit/eda99074f887aaf3a43afd4cdb1fa28308962bdf)
 
 
 ## Asset Mapper
